@@ -31,4 +31,6 @@ catch(err)
     console.log("Error in connecting DB",err)
 }
 })()
-
+app.get("/", (req, res) => {
+    res.send("Working fine...");
+  });
